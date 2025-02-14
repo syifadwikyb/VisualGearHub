@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NavMain() {
   return (
-    <div className="fixed top-0 w-full">
+    <div className="sticky top-0 w-screen z-50">
       <div className="container mx-auto flex justify-between bg-primary py-4 px-8 rounded-3xl">
         <p className="text-black font-bold">VisualGearHub</p>
         <div className="flex gap-6">
@@ -22,8 +22,7 @@ function Content({ to, content }) {
     <div>
       <Link
         to={to}
-        className="font-bold text-black hover:bg-white hover:text-secondary px-5 py-2 rounded-xl transition"
-      >
+        className="text-lg font-semibold text-black hover:bg-white hover:text-secondary px-5 py-2 rounded-xl transition">
         {content}
       </Link>
     </div>

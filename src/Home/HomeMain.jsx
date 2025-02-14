@@ -1,14 +1,14 @@
 import Container from "../NavFooter/Container";
-import NavMain from "../NavFooter/NavMain";
+import Hero from "./Hero";
+import PopularProduct from "./PopularProduct";
+import Rating from "./Rating";
 
 export default function HomeMain() {
   return (
-    <div>
-      <Container>
-        <div className="container mx-auto">
-          <p>Hallo</p>
-        </div>
-      </Container>
-    </div>
+    <Container>
+      <Hero />
+      <PopularProduct/>
+      <Rating/>
+    </Container>
   );
 }
