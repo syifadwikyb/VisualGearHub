@@ -7,6 +7,7 @@ import ErrorPage from './404/ErrorPage';
 import LoginMain from './Auth/login/LoginMain';
 import RegisterMain from './Auth/register/RegisterMain';
 import ContactMain from './Contact/ContactMain';
+import AboutMain from './AboutMe/AboutMain';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactMain/>,
+  },
+
+  {
+    path: "/aboutme",
+    element: <AboutMain/>,
   },
 
 ])
