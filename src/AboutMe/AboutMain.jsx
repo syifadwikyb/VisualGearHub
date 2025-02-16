@@ -1,4 +1,5 @@
 import Container from "../NavFooter/Container";
+import Blog from "./Blog";
 import Feature from "./Feature";
 import LeftAbout from "./LeftAbout";
 import RightAbout from "./RightAbout";
@@ -14,6 +15,7 @@ export default function AboutMain() {
         </div>
           <Feature />
           <VisionMission />
+          <Blog />
       </div>
     </Container>
   );

@@ -6,4 +6,6 @@
 
 body {
   @apply font-poppins;
+  overflow-x: hidden
 }
+

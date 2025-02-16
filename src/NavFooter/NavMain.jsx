@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function NavMain() {
   return (
-    <div className="sticky top-0 w-screen z-50">
-      <div className="container mx-auto flex justify-between bg-primary py-4 px-8 rounded-3xl">
+    <div className="sticky top-0 w-screen z-50 overflow-hidden">
+      <div className="container mx-auto flex justify-between bg-primary py-4 px-8 rounded-3xl shadow-xl">
         <p className="text-black font-bold">VisualGearHub</p>
         <div className="flex gap-6">
           <Content to="/" content="Home" />

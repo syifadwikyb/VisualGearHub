@@ -10,25 +10,21 @@ export default function Feature() {
       </p>
 
       <div className="flex justify-between w-full">
-        <div className="relative w-80 h-72 mt-6 ml-6 flex items-center justify-center bg-primary rounded-3xl shadow-xl cursor-pointer transition-transform duration-300 hover:scale-110">
-          <div className="absolute -top-6 -left-6 w-60 h-32 bg-secondary rounded-l-2xl rounded-br-2xl"></div>
-          <p className="text-black font-bold text-center text-2xl p-6 mt-10">
-            Barang Berkualitas Tinggi
-          </p>
-        </div>
-        <div className="relative w-80 h-72 mt-6 ml-6 flex items-center justify-center bg-primary rounded-3xl shadow-xl cursor-pointer transition-transform duration-300 hover:scale-110">
-          <div className="absolute -top-6 -left-6 w-60 h-32 bg-secondary rounded-l-2xl rounded-br-2xl"></div>
-          <p className="text-black font-bold text-center text-2xl p-6 mt-10">
-            Barang Berkualitas Tinggi
-          </p>
-        </div>
-        <div className="relative w-80 h-72 mt-6 ml-6 flex items-center justify-center bg-primary rounded-3xl shadow-xl cursor-pointer transition-transform duration-300 hover:scale-110">
-          <div className="absolute -top-6 -left-6 w-60 h-32 bg-secondary rounded-l-2xl rounded-br-2xl"></div>
-          <p className="text-black font-bold text-center text-2xl p-6 mt-10">
-            Barang Berkualitas Tinggi
-          </p>
-        </div>
+        <CardFeature content="Barang Berkualitas Tinggi" />
+        <CardFeature content="Barang Berkualitas Tinggi" />
+        <CardFeature content="Barang Berkualitas Tinggi" />
       </div>
+    </div>
+  );
+}
+
+export function CardFeature({ content }) {
+  return (
+    <div className="relative w-80 h-72 mt-6 ml-6 flex items-center justify-center bg-primary rounded-3xl shadow-xl cursor-pointer transition-transform duration-300 hover:scale-110">
+      <div className="absolute -top-6 -left-6 w-60 h-32 bg-secondary rounded-l-2xl rounded-br-2xl"></div>
+      <p className="text-black font-bold text-center text-2xl p-6 mt-10">
+        {content}
+      </p>
     </div>
   );
 }
