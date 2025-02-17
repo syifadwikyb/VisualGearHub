@@ -1,15 +1,14 @@
 import { BsFillCalendarDateFill } from "react-icons/bs";
+import Title from "../Component/Title";
 
 export default function Blog() {
   return (
     <div className="mt-28">
-      <h2 className="font-bold text-center text-4xl text-black mb-6">
-        Blog/Artikel
-      </h2>
-      <p className="font-semibold text-center text-xl text-black mb-20">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
-        arcu vitae purus elementum, a dignissim eros bibendum.
-      </p>
+      <Title
+        title="Blog/Artikel"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
+        arcu vitae purus elementum, a dignissim eros bibendum."
+      />
 
       {/* Wrapper dengan overflow-x-auto */}
       <div className="overflow-x-auto">

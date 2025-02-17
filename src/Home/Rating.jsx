@@ -3,22 +3,21 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 import { FreeMode, Autoplay } from "swiper/modules";
+import Title from "../Component/Title";
 
 export default function Rating() {
   return (
     <div className="container mx-auto mb-24">
-      <h2 className="font-bold text-center text-4xl text-black">
-        Produk Terpopuler
-      </h2>
-      <p className="font-semibold text-center text-xl text-black mb-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
-        arcu vitae purus elementum, a dignissim eros bibendum.
-      </p>
+      <Title
+        title="Produk Terpopuler"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
+      arcu vitae purus elementum, a dignissim eros bibendum."
+      />
 
       <Swiper
-        slidesPerView={3}  // Menampilkan 3 kartu dalam satu tampilan
-        spaceBetween={10}  // Jarak antar kartu
-        freeMode={true}    // Mode geser bebas
+        slidesPerView={3} // Menampilkan 3 kartu dalam satu tampilan
+        spaceBetween={10} // Jarak antar kartu
+        freeMode={true} // Mode geser bebas
         autoplay={{ delay: 2000, disableOnInteraction: false }} // Geser otomatis
         modules={[FreeMode, Autoplay]} // Gunakan fitur FreeMode dan Autoplay
         className="w-full"

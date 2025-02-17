@@ -1,13 +1,13 @@
+import Title from "../Component/Title";
+
 export default function Feature() {
   return (
     <div className="mt-28">
-      <h2 className="font-bold text-center text-4xl text-black mb-6">
-        Alasan Memlih Kami
-      </h2>
-      <p className="font-semibold text-center text-xl text-black mb-20">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
-        arcu vitae purus elementum, a dignissim eros bibendum.
-      </p>
+      <Title
+        title="Alasan Memilih Kami"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
+        arcu vitae purus elementum, a dignissim eros bibendum."
+      />
 
       <div className="flex justify-between w-full">
         <CardFeature content="Barang Berkualitas Tinggi" />

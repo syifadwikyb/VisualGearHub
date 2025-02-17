@@ -8,6 +8,8 @@ import LoginMain from './Auth/login/LoginMain';
 import RegisterMain from './Auth/register/RegisterMain';
 import ContactMain from './Contact/ContactMain';
 import AboutMain from './AboutMe/AboutMain';
+import CategoriesMain from './Categories/CategoriesMain';
+import ProductsMain from './Products/ProductsMain';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,15 @@ const router = createBrowserRouter([
     element: <AboutMain/>,
   },
 
+  {
+    path: "/categories",
+    element: <CategoriesMain/>,
+  },
+
+  {
+    path: "/products",
+    element: <ProductsMain/>,
+  },
 ])
 
 createRoot(document.getElementById('root')).render(

@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
+import Title from "../Component/Title";
 
 export default function PopularProduct() {
   return (
     <div className="container mx-auto mb-24">
-      <h2 className="font-bold text-center text-4xl text-black mb-6">
-        Produk Terpopuler
-      </h2>
-      <p className="font-semibold text-center text-xl text-black mb-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
-        arcu vitae purus elementum, a dignissim eros bibendum.
-      </p>
+      <Title
+        title="Produk Terpopuler"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
+        arcu vitae purus elementum, a dignissim eros bibendum."
+      />
 
       <div className="flex justify-between">
         <ProductBig

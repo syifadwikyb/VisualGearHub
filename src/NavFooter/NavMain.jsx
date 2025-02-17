@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavMain() {
   return (
@@ -7,10 +7,10 @@ export default function NavMain() {
         <p className="text-black font-bold">VisualGearHub</p>
         <div className="flex gap-6">
           <Content to="/" content="Home" />
-          <Content to="/" content="About Me" />
-          <Content to="/" content="Products" />
-          <Content to="/" content="Categories" />
-          <Content to="/" content="Contact" />
+          <Content to="/aboutme" content="About Me" />
+          <Content to="/products" content="Products" />
+          <Content to="/categories" content="Categories" />
+          <Content to="/contact" content="Contact" />
         </div>
       </div>
     </div>
@@ -18,11 +18,17 @@ export default function NavMain() {
 }
 
 function Content({ to, content }) {
+  const location = useLocation(); // Dapatkan path saat ini
+  const isActive = location.pathname === to; // Cek apakah path saat ini sama dengan 'to'
+
   return (
     <div>
       <Link
         to={to}
-        className="text-lg font-semibold text-black hover:bg-white hover:text-secondary px-5 py-2 rounded-xl transition">
+        className={`text-lg font-semibold px-5 py-2 rounded-xl transition ${
+          isActive ? "bg-white text-secondary" : "text-black hover:bg-white hover:text-secondary"
+        }`}
+      >
         {content}
       </Link>
     </div>

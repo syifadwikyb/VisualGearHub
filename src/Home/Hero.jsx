@@ -19,11 +19,12 @@ export default function Hero() {
           Beli Peralatan Berkualitas Tinggi dengan Mudah dan Cepat.
         </p>
         <div className="w-full py-6 bg-white shadow-md rounded-full flex justify-end">
-          <div className="py-4 w-44 rounded-full text-center mr-8 bg-primary hover:bg-secondary">
-            <Link to="/login" className="text-white text-lg">
-              Daftar Gratis
-            </Link>
-          </div>
+          <Link
+            to="/login"
+            className="text-white hover:text-white text-lg py-4 w-44 rounded-full text-center mr-8 bg-primary hover:bg-secondary"
+          >
+            Daftar Gratis
+          </Link>
         </div>
       </div>
     </div>
