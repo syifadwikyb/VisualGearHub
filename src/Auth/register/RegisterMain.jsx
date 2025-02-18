@@ -10,6 +10,7 @@ import FooterAuth from "../FooterAuth";
 import BorderButton from "../BorderButton";
 import AuthLeft from "../AuthLeft";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import ButtonGoogle from "../ButtonGoogle";
 
 export default function RegisterMain({ type = "register" }) {
   const [email, setEmail] = useState("");
@@ -155,6 +156,7 @@ export default function RegisterMain({ type = "register" }) {
                 </button>
               </div>
               <BorderButton text="Register" loading={loading} />
+              <ButtonGoogle/>
             </form>
           </div>
           <FooterAuth type={type} />
