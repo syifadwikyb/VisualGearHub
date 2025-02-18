@@ -7,8 +7,8 @@ export default function HomeMain() {
   return (
     <Container>
       <Hero />
-      <PopularProduct/>
-      <Rating/>
+      <PopularProduct />
+      <Rating />
     </Container>
   );
 }

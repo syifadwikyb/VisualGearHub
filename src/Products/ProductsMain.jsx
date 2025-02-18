@@ -1,8 +1,24 @@
 import { FaSearch } from "react-icons/fa";
 import Container from "../NavFooter/Container";
 import CardProduct from "./CardProduct";
+import { app } from "../Config/Firebase";
+import { useEffect } from "react";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 export default function ProductsMain() {
+  const navigate = useNavigate();
+  const auth = getAuth(app);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        navigate("/login");
+      }
+    });
+
+    return () => unsubscribe();
+  }, [auth, navigate]);
   return (
     <Container>
       <div className="container mx-auto mb-24 mt-28">

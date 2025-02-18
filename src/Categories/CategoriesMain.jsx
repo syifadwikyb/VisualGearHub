@@ -1,7 +1,23 @@
-import Title from "../components/Title";
+import { app } from "../Config/Firebase";
+import { useEffect } from "react";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import Title from "../Components/Title";
 import Container from "../NavFooter/Container";
 
 export default function CategoriesMain() {
+  const navigate = useNavigate();
+  const auth = getAuth(app);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        navigate("/login");
+      }
+    });
+
+    return () => unsubscribe();
+  }, [auth, navigate]);
   return (
     <Container>
       <div className="container mx-auto mb-24 mt-28">
