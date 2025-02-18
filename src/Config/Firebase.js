@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA8D8o-zne8ZiVvhqmGmhz7YS7gweiTgJ0",
@@ -12,9 +12,9 @@ const firebaseConfig = {
   measurementId: "G-LZ2K346QW0",
 };
 
-// Initialize Firebase
+// Inisialisasi Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app); // Menambahkan auth
-const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const db = getFirestore(app); // Tambahkan Firestore
 
-export { app, auth, analytics };
+export { app, auth, db };
