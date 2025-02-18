@@ -12,9 +12,8 @@ const firebaseConfig = {
   measurementId: "G-LZ2K346QW0",
 };
 
-// Inisialisasi Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const db = getFirestore(app); // Tambahkan Firestore
+const db = getFirestore(app);
 
 export { app, auth, db };
