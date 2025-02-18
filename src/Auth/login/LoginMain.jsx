@@ -8,6 +8,7 @@ import FooterAuth from "../FooterAuth";
 import "../../App.css";
 import AuthLeft from "../AuthLeft";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import ButtonGoogle from "../ButtonGoogle";
 
 export default function LoginMain({ type = "login" }) {
   const navigate = useNavigate();
@@ -101,6 +102,7 @@ export default function LoginMain({ type = "login" }) {
               </div>
 
               <BorderButton text="Login" type="submit" loading={loading} />
+              <ButtonGoogle/>
             </form>
           </div>
 
