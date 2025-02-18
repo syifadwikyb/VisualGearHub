@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 import { FreeMode, Autoplay } from "swiper/modules";
-import Title from "../Component/Title";
+import Title from "../Components/Title";
 
 export default function Rating() {
   return (

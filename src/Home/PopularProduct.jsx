@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Title from "../Component/Title";
+import Title from "../Components/Title";
 
 export default function PopularProduct() {
   return (

@@ -1,4 +1,4 @@
-import Title from "../Component/Title";
+import Title from "../components/Title";
 import Container from "../NavFooter/Container";
 
 export default function CategoriesMain() {

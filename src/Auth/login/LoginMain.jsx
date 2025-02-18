@@ -3,7 +3,6 @@ import BorderButton from "../BorderButton";
 import FormLabel from "../FormLabel";
 import FooterAuth from "../FooterAuth";
 import "../../App.css";
-import { Link } from "react-router-dom";
 import AuthLeft from "../AuthLeft";
 
 export default function LoginMain({ type = "login" }) {

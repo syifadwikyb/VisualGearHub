@@ -1,5 +1,5 @@
 import { BsFillCalendarDateFill } from "react-icons/bs";
-import Title from "../Component/Title";
+import Title from "../Components/Title";
 
 export default function Blog() {
   return (

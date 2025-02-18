@@ -1,4 +1,4 @@
-import Title from "../Component/Title";
+import Title from "../Components/Title";
 
 export default function Feature() {
   return (
