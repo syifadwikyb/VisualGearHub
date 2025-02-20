@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center justify-between my-24">
+    <div className="container mx-auto h-screen flex flex-col lg:flex-row-reverse items-center justify-between">
       <img
         src="/img/Hero.png"
         className="w-[1280px] max-w-full h-auto"
@@ -18,12 +18,13 @@ export default function Hero() {
         <p className="mt-3 text-3xl text-black">
           Beli Peralatan Berkualitas Tinggi dengan Mudah dan Cepat.
         </p>
-        <div className="w-full py-6 bg-white shadow-md rounded-full flex justify-end">
+        <div className="max-w-xl py-6 bg-white shadow-md rounded-full flex justify-between items-center px-8">
+          <p className="text-black font-semibold text-xl">Mau Akses Semuanya?</p>
           <Link
             to="/login"
-            className="text-white hover:text-white text-lg py-4 w-44 rounded-full text-center mr-8 bg-primary hover:bg-secondary"
+            className="text-white hover:text-white text-lg py-4 w-44 rounded-full text-center bg-secondary hover:bg-primary"
           >
-            Daftar Gratis
+            Daftar Sekarang
           </Link>
         </div>
       </div>

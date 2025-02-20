@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA8D8o-zne8ZiVvhqmGmhz7YS7gweiTgJ0",
@@ -14,5 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
+const db = getFirestore(app); // Tambahkan Firestore
+const storage = getStorage(app); // Tambahkan Storage untuk foto profil
 
-export { app, auth, googleProvider };
+export { app, auth, googleProvider, db, storage };

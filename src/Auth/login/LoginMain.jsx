@@ -55,7 +55,7 @@ export default function LoginMain({ type = "login" }) {
         <AuthLeft />
 
         <div className="bg-primary w-[500px] rounded-3xl p-12 flex flex-col justify-between">
-          <div className="">
+          <div>
             <h1 className="text-4xl font-bold mb-10 text-black text-center">
               Login
             </h1>
@@ -102,7 +102,7 @@ export default function LoginMain({ type = "login" }) {
               </div>
 
               <BorderButton text="Login" type="submit" loading={loading} />
-              <ButtonGoogle/>
+              <ButtonGoogle />
             </form>
           </div>
 

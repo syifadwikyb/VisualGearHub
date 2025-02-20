@@ -1,7 +1,7 @@
 export default function FormLabel({ inputName, labelName, inputType, placeholder, value, onChange }) {
   return (
     <div className="mb-2">
-      <label className="block text-back text-lg font-semibold mb-2">
+      <label className="block text-black text-lg font-semibold mb-2">
         {labelName}
       </label>
       <input
